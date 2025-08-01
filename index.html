@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator - Privacy Policy & Data Deletion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        header {
+            background: linear-gradient(135deg, #0d1b2a 0%, #415a77 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: #06d6a0;
+            border-radius: 16px;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+
+        .subtitle {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        nav {
+            background: #f8f9fa;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e9ecef;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 0 2rem;
+        }
+
+        .nav-link {
+            color: #495057;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            background: #06d6a0;
+            color: white;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        .section {
+            display: none;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: #0d1b2a;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            font-weight: 400;
+        }
+
+        h3 {
+            color: #415a77;
+            margin: 2rem 0 1rem;
+            font-size: 1.3rem;
+        }
+
+        p, li {
+            margin-bottom: 1rem;
+            color: #495057;
+        }
+
+        .highlight-box {
+            background: #e7f3ff;
+            border-left: 4px solid #06d6a0;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .contact-form {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #495057;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #06d6a0;
+            box-shadow: 0 0 0 3px rgba(6, 214, 160, 0.1);
+        }
+
+        .btn {
+            background: #06d6a0;
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #05c08c;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(6, 214, 160, 0.3);
+        }
+
+        footer {
+            background: #0d1b2a;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        ul {
+            padding-left: 2rem;
+        }
+
+        .app-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #06d6a0;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            main {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-icon">🧮</div>
+            <h1>Scientific Calculator</h1>
+            <p class="subtitle">Advanced calculator with scientific functions</p>
+        </header>
+
+        <nav>
+            <div class="nav-container">
+                <a href="#" class="nav-link active" onclick="showSection('home')">Home</a>
+                <a href="#" class="nav-link" onclick="showSection('privacy')">Privacy Policy</a>
+                <a href="#" class="nav-link" onclick="showSection('deletion')">Data Deletion</a>
+                <a href="#" class="nav-link" onclick="showSection('contact')">Contact</a>
+            </div>
+        </nav>
+
+        <main>
+            <!-- Home Section -->
+            <section id="home" class="section active">
+                <h2>Welcome to Scientific Calculator</h2>
+                <p>Our Scientific Calculator is a powerful, easy-to-use calculator app designed for students, engineers, scientists, and anyone who needs advanced mathematical calculations on their mobile device.</p>
+
+                <div class="app-features">
+                    <div class="feature-card">
+                        <h3>🔢 Basic Operations</h3>
+                        <p>Addition, subtraction, multiplication, and division with a clean, intuitive interface.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>📐 Scientific Functions</h3>
+                        <p>Trigonometric functions (sin, cos, tan), logarithms, square roots, and powers.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🔒 Privacy First</h3>
+                        <p>All calculations are performed locally on your device. No data is collected or transmitted.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>⚡ Fast & Reliable</h3>
+                        <p>Instant calculations with precise results and error handling for invalid operations.</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>Available on Google Play Store</h3>
+                    <p>Download our Scientific Calculator app for free and enjoy advanced mathematical calculations anywhere, anytime.</p>
+                </div>
+            </section>
+
+            <!-- Privacy Policy Section -->
+            <section id="privacy" class="section">
+                <h2>Privacy Policy</h2>
+                <p><strong>Effective Date:</strong> August 1, 2025</p>
+                <p><strong>Last Updated:</strong> August 1, 2025</p>
+
+                <h3>1. Information We Collect</h3>
+                <p>Our Scientific Calculator app is designed with privacy in mind. We do <strong>not</strong> collect, store, or transmit any personal information or calculation data. All calculations are performed locally on your device.</p>
+
+                <h3>2. Data Storage</h3>
+                <p>The app does not:</p>
+                <ul>
+                    <li>Collect personal information</li>
+                    <li>Store calculation history</li>
+                    <li>Require user accounts or registration</li>
+                    <li>Access your contacts, photos, or other personal data</li>
+                    <li>Send data to external servers</li>
+                </ul>
+
+                <h3>3. Permissions</h3>
+                <p>Our app only requests the minimum permissions necessary for basic functionality. We do not request access to sensitive information such as:</p>
+                <ul>
+                    <li>Camera or microphone</li>
+                    <li>Location services</li>
+                    <li>Contacts or phone</li>
+                    <li>Storage (beyond app functionality)</li>
+                </ul>
+
+                <h3>4. Third-Party Services</h3>
+                <p>Our app does not integrate with any third-party analytics, advertising, or data collection services.</p>
+
+                <h3>5. Children's Privacy</h3>
+                <p>Our app is safe for users of all ages. Since we don't collect any personal information, there are no special considerations for users under 13.</p>
+
+                <h3>6. Changes to This Policy</h3>
+                <p>We may update this privacy policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
+
+                <h3>7. Contact Us</h3>
+                <p>If you have any questions about this privacy policy, please contact us using the contact form on this website.</p>
+            </section>
+
+            <!-- Data Deletion Section -->
+            <section id="deletion" class="section">
+                <h2>Data Deletion Request</h2>
+                
+                <div class="highlight-box">
+                    <h3>Important Note</h3>
+                    <p>Our Scientific Calculator app does <strong>not collect or store any user data</strong>. All calculations are performed locally on your device and are not saved or transmitted anywhere.</p>
+                </div>
+
+                <h3>What This Means</h3>
+                <p>Since our app doesn't collect, store, or transmit any personal data:</p>
+                <ul>
+                    <li>There is no user account data to delete</li>
+                    <li>No calculation history is stored on our servers</li>
+                    <li>No personal information is collected</li>
+                    <li>Simply uninstalling the app removes any local app data from your device</li>
+                </ul>
+
+                <h3>If You Still Want to Submit a Deletion Request</h3>
+                <p>Even though we don't collect data, if you want to submit a formal deletion request for peace of mind, you can do so below:</p>
+
+                <div class="contact-form">
+                    <h3>Data Deletion Request Form</h3>
+                    <form id="deletionForm">
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="device">Device Information (optional):</label>
+                            <input type="text" id="device" name="device" placeholder="e.g., Android 12, Samsung Galaxy S22">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reason">Reason for Deletion Request:</label>
+                            <select id="reason" name="reason" required>
+                                <option value="">Select a reason</option>
+                                <option value="privacy">Privacy concerns</option>
+                                <option value="uninstall">Uninstalling the app</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="additional">Additional Information (optional):</label>
+                            <textarea id="additional" name="additional" rows="4" placeholder="Any additional details about your request..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Submit Deletion Request</button>
+                    </form>
+
+                    <div id="confirmationMessage" style="display: none; margin-top: 1rem; padding: 1rem; background: #d4edda; border: 1px solid #c3e6cb; border-radius: 6px; color: #155724;">
+                        Thank you for your request. Since our app doesn't collect any user data, there is nothing to delete from our servers. Your request has been noted.
+                    </div>
+                </div>
+
+                <h3>How to Remove App Data from Your Device</h3>
+                <p>To completely remove any local app data from your device:</p>
+                <ul>
+                    <li><strong>Android:</strong> Go to Settings > Apps > Scientific Calculator > Storage > Clear Data, then uninstall the app</li>
+                    <li><strong>Or simply:</strong> Uninstall the app from your device - this removes all local data</li>
+                </ul>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <h2>Contact Us</h2>
+                <p>If you have any questions, concerns, or feedback about our Scientific Calculator app, please don't hesitate to reach out to us.</p>
+
+                <div class="contact-form">
+                    <h3>Contact Form</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">Name:</label>
+                            <input type="text" id="contactName" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address:</label>
+                            <input type="email" id="contactEmail" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="bug">Bug Report</option>
+                                <option value="feature">Feature Request</option>
+                                <option value="privacy">Privacy Question</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Please describe your question or concern..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+
+                    <div id="contactConfirmation" style="display: none; margin-top: 1rem; padding: 1rem; background: #d4edda; border: 1px solid #c3e6cb; border-radius: 6px; color: #155724;">
+                        Thank you for your message. We'll get back to you as soon as possible.
+                    </div>
+                </div>
+
+                <h3>App Information</h3>
+                <div class="highlight-box">
+                    <p><strong>App Name:</strong> Scientific Calculator</p>
+                    <p><strong>Developer:</strong> [Your Name/Company]</p>
+                    <p><strong>Version:</strong> 1.0.0</p>
+                    <p><strong>Platform:</strong> Android (Google Play Store)</p>
+                    <p><strong>Last Updated:</strong> August 2025</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Scientific Calculator. All rights reserved.</p>
+            <p>This app respects your privacy and does not collect any personal data.</p>
+        </footer>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+            
+            // Remove active class from all nav links
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => link.classList.remove('active'));
+            
+            // Show selected section
+            document.getElementById(sectionId).classList.add('active');
+            
+            // Add active class to clicked nav link
+            event.target.classList.add('active');
+        }
+
+        // Handle deletion form submission
+        document.getElementById('deletionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show confirmation message
+            document.getElementById('confirmationMessage').style.display = 'block';
+            
+            // Reset form
+            this.reset();
+            
+            // Scroll to confirmation message
+            document.getElementById('confirmationMessage').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Handle contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show confirmation message
+            document.getElementById('contactConfirmation').style.display = 'block';
+            
+            // Reset form
+            this.reset();
+            
+            // Scroll to confirmation message
+            document.getElementById('contactConfirmation').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+            });
+        });
+    </script>
+</body>
+</html>
